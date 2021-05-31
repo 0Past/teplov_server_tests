@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c347010-f2ea-4e61-9791-20e117d1b52a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rrFPpVdPRdzYE9IYloZ7Pz2EdR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.teplov.service" />
+      <recent name="com.teplov.controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PaymentServiceTest">
+    <configuration name="TeplovApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.teplov.TeplovApplication" />
+      <module name="teplov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.teplov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teplov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.teplov.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.teplov.service" />
+      <option name="MAIN_CLASS_NAME" value="com.teplov.service.CategoryServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teplov" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.teplov.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="PACKAGE_NAME" value="com.teplov.service" />
+      <option name="MAIN_CLASS_NAME" value="com.teplov.service.ItemServiceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teplov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.teplov.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.teplov.service" />
+      <option name="MAIN_CLASS_NAME" value="com.teplov.service.OrderServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teplov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.teplov.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.teplov.service" />
+      <option name="MAIN_CLASS_NAME" value="com.teplov.service.PaymentServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.TeplovApplication" />
+      <item itemvalue="JUnit.ItemServiceTest" />
+      <item itemvalue="JUnit.OrderServiceTest" />
+      <item itemvalue="JUnit.CategoryServiceTest" />
+      <item itemvalue="JUnit.PaymentServiceTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PaymentServiceTest" />
+        <item itemvalue="JUnit.CategoryServiceTest" />
+        <item itemvalue="Application.TeplovApplication" />
+        <item itemvalue="JUnit.ItemServiceTest" />
+        <item itemvalue="JUnit.OrderServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c347010-f2ea-4e61-9791-20e117d1b52a" name="Default Changelist" comment="" />
+      <created>1619726281025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619726281025</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622472231930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622472231930" />
+    <state x="718" y="254" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1619726287208">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="254" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1619726287208" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1622096927770">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1622096927770" />
+    <state width="1860" height="260" key="GridCell.Tab.0.bottom" timestamp="1622475623016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622475623016" />
+    <state width="1860" height="260" key="GridCell.Tab.0.center" timestamp="1622475623016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="260" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622475623016" />
+    <state width="1860" height="260" key="GridCell.Tab.0.left" timestamp="1622475623016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="260" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622475623016" />
+    <state width="1860" height="260" key="GridCell.Tab.0.right" timestamp="1622475623016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="260" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622475623016" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1622097022503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1622097022503" />
+  </component>
+</project>
