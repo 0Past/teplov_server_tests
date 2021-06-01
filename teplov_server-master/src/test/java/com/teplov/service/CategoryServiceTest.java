@@ -27,14 +27,11 @@ public class CategoryServiceTest {
     @Test
     public void findAll() {
         ArrayList<Category> expected = new ArrayList<>();
-
         Category category = new Category();
         expected.add(category);
-
         Mockito.when(service.findAll()).thenReturn(expected);
         Assert.assertEquals(service.findAll(), expected);
     }
-
     @Test
     public void findById() {
         Optional<Category> expected = Optional.of(new Category());
@@ -42,7 +39,6 @@ public class CategoryServiceTest {
         Mockito.doReturn(expected)
                 .when(repository)
                 .findById(1L);
-
         Assert.assertEquals(expected, service.findById(1L));
     }
 
@@ -54,7 +50,6 @@ public class CategoryServiceTest {
         Mockito.doReturn(expected)
                 .when(repository)
                 .save(category);
-
         Assert.assertEquals(expected, service.create(category));
     }
 
@@ -63,7 +58,6 @@ public class CategoryServiceTest {
         Mockito.doReturn(Optional.of(new Category()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.delete(1L));
     }
 
@@ -72,7 +66,6 @@ public class CategoryServiceTest {
         Mockito.doReturn(Optional.of(new Category()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.update(new Category(), 1L));
     }
 }
