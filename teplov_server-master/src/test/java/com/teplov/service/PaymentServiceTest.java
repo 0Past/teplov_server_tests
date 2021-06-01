@@ -29,10 +29,8 @@ public class PaymentServiceTest {
     @Test
     public void findAll() {
         ArrayList<Payment> expected = new ArrayList<>();
-
         Payment payment = new Payment();
         expected.add(payment);
-
         Mockito.when(service.findAll()).thenReturn(expected);
         Assert.assertEquals(service.findAll(), expected);
     }
