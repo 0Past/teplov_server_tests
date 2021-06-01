@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -30,10 +29,8 @@ public class InventoryServiceTest {
     @Test
     public void findAll() {
         ArrayList<Inventory> expected = new ArrayList<>();
-
         Inventory inventory = new Inventory();
         expected.add(inventory);
-
         Mockito.when(service.findAll()).thenReturn(expected);
         Assert.assertEquals(service.findAll(), expected);
     }
@@ -41,11 +38,9 @@ public class InventoryServiceTest {
     @Test
     public void findById() {
         Optional<Inventory> expected = Optional.of(new Inventory());
-
         Mockito.doReturn(expected)
                 .when(repository)
                 .findById(1L);
-
         Assert.assertEquals(expected, service.findById(1L));
     }
 
@@ -53,25 +48,20 @@ public class InventoryServiceTest {
     public void create() {
         Inventory expected = new Inventory();
         Inventory inventory = new Inventory();
-
         Mockito.doReturn(expected)
                 .when(repository)
                 .save(inventory);
-
         Assert.assertEquals(expected, service.create(inventory));
     }
 
     @Test
     public void findByCategory() {
         ArrayList<Inventory> expected = new ArrayList<>();
-
         Inventory inventory = new Inventory();
         Item item = new Item();
         item.setCategory(new Category());
-
         inventory.setItem(item);
         expected.add(inventory);
-
         Mockito.when(service.findByCategory("Phones")).thenReturn(expected);
         Assert.assertEquals(service.findAll(), expected);
     }
@@ -81,7 +71,6 @@ public class InventoryServiceTest {
         Mockito.doReturn(Optional.of(new Inventory()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.delete(1L));
     }
 
@@ -90,7 +79,6 @@ public class InventoryServiceTest {
         Mockito.doReturn(Optional.of(new Inventory()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.update(new Inventory(), 1L));
     }
 }
