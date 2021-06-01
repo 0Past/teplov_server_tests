@@ -26,11 +26,9 @@ public class OrderedItemServiceTest {
     public void addItems() {
         OrderedItem orderedItem1 = new OrderedItem();
         OrderedItem orderedItem2 = new OrderedItem();
-
         ArrayList<OrderedItem> orderedItems = new ArrayList<>();
         orderedItems.add(orderedItem1);
         orderedItems.add(orderedItem2);
-
         Assert.assertTrue(service.addItems(orderedItems));
     }
 }
