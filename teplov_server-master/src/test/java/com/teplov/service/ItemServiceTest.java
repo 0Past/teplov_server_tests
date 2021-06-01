@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -34,10 +33,8 @@ public class ItemServiceTest {
     @Test
     public void findAll() {
         ArrayList<Item> expected = new ArrayList<>();
-
         Item item = new Item();
         expected.add(item);
-
         Mockito.when(service.findAll()).thenReturn(expected);
         Assert.assertEquals(service.findAll(), expected);
     }
@@ -45,23 +42,18 @@ public class ItemServiceTest {
     @Test
     public void findById() {
         Optional<Item> expected = Optional.of(new Item());
-
         Mockito.doReturn(expected)
                 .when(repository)
                 .findById(1L);
-
         Assert.assertEquals(expected, service.findById(1L));
     }
 
     @Test
     public void findAllByCategoryId() {
         ArrayList<Item> expected = new ArrayList<>();
-
         Item item = new Item();
         item.setCategory(new Category());
-
         expected.add(item);
-
         Mockito.when(service.findAllByCategoryId(1L)).thenReturn(expected);
         Assert.assertEquals(service.findAllByCategoryId(1L), expected);
     }
@@ -69,16 +61,12 @@ public class ItemServiceTest {
     @Test
     public void findAllByOrderId() {
         ArrayList<OrderedItem> expected = new ArrayList<>();
-
         OrderedItem orderedItem = new OrderedItem();
         Item item = new Item();
         Orders orders = new Orders();
-
         orderedItem.setOrder(orders);
         orderedItem.setItem(item);
-
         expected.add(orderedItem);
-
         Mockito.when(orderedItemRepository.findByOrderId(1L)).thenReturn(expected);
         Assert.assertEquals(orderedItemRepository.findByOrderId(1L), expected);
     }
@@ -87,11 +75,9 @@ public class ItemServiceTest {
     public void create() {
         Item expected = new Item();
         Item item = new Item();
-
         Mockito.doReturn(expected)
                 .when(repository)
                 .save(item);
-
         Assert.assertEquals(expected, service.create(item));
     }
 
@@ -100,7 +86,6 @@ public class ItemServiceTest {
         Mockito.doReturn(Optional.of(new Item()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.delete(1L));
     }
 
@@ -109,7 +94,6 @@ public class ItemServiceTest {
         Mockito.doReturn(Optional.of(new Item()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.update(new Item(), 1L));
     }
 }
