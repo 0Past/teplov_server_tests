@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -27,10 +26,8 @@ public class EmployeeServiceTest {
     @Test
     public void findAll() {
         ArrayList<Employee> expected = new ArrayList<>();
-
         Employee employee = new Employee();
         expected.add(employee);
-
         Mockito.when(service.findAll()).thenReturn(expected);
         Assert.assertEquals(service.findAll(), expected);
     }
@@ -38,11 +35,9 @@ public class EmployeeServiceTest {
     @Test
     public void findById() {
         Optional<Employee> expected = Optional.of(new Employee());
-
         Mockito.doReturn(expected)
                 .when(repository)
                 .findById(1L);
-
         Assert.assertEquals(expected, service.findById(1L));
     }
 
@@ -50,11 +45,9 @@ public class EmployeeServiceTest {
     public void create() {
         Employee expected = new Employee();
         Employee employee = new Employee();
-
         Mockito.doReturn(expected)
                 .when(repository)
                 .save(employee);
-
         Assert.assertEquals(expected, service.create(employee));
     }
 
@@ -63,7 +56,6 @@ public class EmployeeServiceTest {
         Mockito.doReturn(Optional.of(new Employee()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.delete(1L));
     }
 
@@ -72,7 +64,6 @@ public class EmployeeServiceTest {
         Mockito.doReturn(Optional.of(new Employee()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.update(new Employee(), 1L));
     }
 }
