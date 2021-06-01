@@ -28,10 +28,8 @@ public class OrderServiceTest {
     @Test
     public void findAll() {
         ArrayList<Orders> expected = new ArrayList<>();
-
         Orders orders = new Orders();
         expected.add(orders);
-
         Mockito.when(service.findAll()).thenReturn(expected);
         Assert.assertEquals(service.findAll(), expected);
     }
@@ -39,11 +37,9 @@ public class OrderServiceTest {
     @Test
     public void findById() {
         Optional<Orders> expected = Optional.of(new Orders());
-
         Mockito.doReturn(expected)
                 .when(repository)
                 .findById(1L);
-
         Assert.assertEquals(expected, service.findById(1L));
     }
 
@@ -51,11 +47,9 @@ public class OrderServiceTest {
     public void create() {
         Orders expected = new Orders();
         Orders orders = new Orders();
-
         Mockito.doReturn(expected)
                 .when(repository)
                 .save(orders);
-
         Assert.assertEquals(expected, service.create(orders));
     }
 
@@ -64,7 +58,6 @@ public class OrderServiceTest {
         Mockito.doReturn(Optional.of(new Orders()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.delete(1L));
     }
 
@@ -73,7 +66,6 @@ public class OrderServiceTest {
         Mockito.doReturn(Optional.of(new Orders()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.update(new Orders(), 1L));
     }
 }
