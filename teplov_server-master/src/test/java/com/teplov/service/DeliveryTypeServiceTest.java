@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import java.util.ArrayList;
 
 @RunWith(SpringRunner.class)
@@ -26,10 +25,8 @@ public class DeliveryTypeServiceTest {
     @Test
     public void findAll() {
         ArrayList<DeliveryType> expected = new ArrayList<>();
-
         DeliveryType deliveryType = new DeliveryType();
         expected.add(deliveryType);
-
         Mockito.when(service.findAll()).thenReturn(expected);
         Assert.assertEquals(service.findAll(), expected);
     }
