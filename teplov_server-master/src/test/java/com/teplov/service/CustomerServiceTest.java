@@ -27,10 +27,8 @@ public class CustomerServiceTest {
     @Test
     public void findAll() {
         ArrayList<Customer> expected = new ArrayList<>();
-
         Customer customer = new Customer();
         expected.add(customer);
-
         Mockito.when(service.findAll()).thenReturn(expected);
         Assert.assertEquals(service.findAll(), expected);
     }
@@ -38,11 +36,9 @@ public class CustomerServiceTest {
     @Test
     public void findById() {
         Optional<Customer> expected = Optional.of(new Customer());
-
         Mockito.doReturn(expected)
                 .when(repository)
                 .findById(1L);
-
         Assert.assertEquals(expected, service.findById(1L));
     }
 
@@ -50,11 +46,9 @@ public class CustomerServiceTest {
     public void create() {
         Customer expected = new Customer();
         Customer customer = new Customer();
-
         Mockito.doReturn(expected)
                 .when(repository)
                 .save(customer);
-
         Assert.assertEquals(expected, service.create(customer));
     }
 
@@ -63,7 +57,6 @@ public class CustomerServiceTest {
         Mockito.doReturn(Optional.of(new Customer()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.delete(1L));
     }
 
@@ -72,7 +65,6 @@ public class CustomerServiceTest {
         Mockito.doReturn(Optional.of(new Customer()))
                 .when(repository)
                 .findById(1L);
-
         Assert.assertTrue(service.update(new Customer(), 1L));
     }
 }
